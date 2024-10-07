@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Oculare</title>
+    <link rel="stylesheet" href="{%static 'css/agend.css'%}">
+    
+</head>
+<!-- -->
+<body>
+
+    
+    <div class="fundo">
+        <img src="images/logo.png" alt="Nossa logo" class="lg1" >
+        <h1 class="title">Agendamento</h1>
+        <input type="text" class="nom" id="nom" placeholder="Nome:">
+        
+        <input type="text" class="tel" id="tel" placeholder="Telefone:">
+        
+        <input type="email" class="email" id="email" placeholder="E-mail:">
+        
+        <input type="date" class="data" id="data" placeholder="Data:">
+        
+        <select name="médico" class="selec" id="médicos" >
+            <option value="selec">Selecione um médico</option>
+            <option value="med1">médico 1</option>
+            <option value="med2">médico 2</option>
+            <option value="med3">médico 3</option>
+        </select>
+        
+        <select name="periodo" class="selec2" id="perio" >
+            <option value="selec">Selecione um periodo</option>
+            <option value="manhã">manhã</option>
+            <option value="tarde">tarde</option>
+            <option value="noite">noite</option>
+        </select>
+        
+        <select name="convênio" class="selec3" id="conv" >
+            <option value="selec">Selecione seu convênio</option>
+            <option value="conv1">x</option>
+            <option value="conv2">y</option>
+            <option value="conv3">z</option>
+        </select>
+        
+        <input type="text" class="men" id="men" placeholder="descrição">
+        <button class="bt1" id="btenv">ENVIAR</button>
+        <h2><a href="" class="link1">Veja os Exames aqui</a></h2>
+    </div>
+   
+
+
+
+
+   
+
+   
+   
+<footer>
+    <div class="ondas">
+        <div class="onda" id="onda0"></div>
+        <div class="onda" id="onda1"></div>
+        <div class="onda" id="onda2"></div>
+        <div class="onda" id="onda3"></div>
+    </div>
+    <!--<h3>Contato</h3>
+    <p>Av. Cap. Júlio Bezerra, 573 - Centro, Boa Vista - RR, 69301-410</p>
+    <p>Email: boavista@outlook.com.br</p>
+    <p>Telefone: +55 95 xxxx-xxxx</p>
+    <center><h6>Copyright © Boa Vista Oftamologia. Todos os direitos reservados.</h6></center>-->
+    <ul class="icone">
+        
+        <li><a class="icon0"  href="#"><ion-icon name="location" class="location"></ion-icon></a></li>
+        <li><a class="icon1" href="#"><ion-icon name="call"></ion-icon></a></li>
+        <li><a class="icon2" href="#"><ion-icon name="at-circle"></ion-icon></a></li>
+    
+    </ul>
+    <p>Copyright © Boa Vista Oftamologia. Todos os direitos reservados.</p>
+   </footer>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

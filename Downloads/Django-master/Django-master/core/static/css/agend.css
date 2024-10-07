@@ -1,0 +1,279 @@
+
+    
+*{
+    font-family: "Inconsolata", monospace;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.title{
+    position: relative;
+    left: 10vw;
+    top: -4vw;
+}
+    
+.nom{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    border-width: 10%;
+    position: relative;
+    top: -2vw;
+    left: 3vw;
+    height: 40px;
+    width: 80%;
+}
+.tel{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: -1vw; 
+    left: 3vw;
+    height: 40px;
+    width: 80%;
+}
+.email{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: 0vw;
+    left: 3vw;
+    height: 40px;
+    width: 80%;
+}
+.data{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: 1vw;
+    left: 22vw;
+    height: 2.1vw;
+    width: 7vw;
+    
+}
+.selec{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: 1vw;
+    left: -4.7vw;
+    height: 40px;
+    width: 55%;
+}
+.selec2{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: 2vw;
+    left: 3vw;
+    height: 40px;
+    width: 40%;
+ }
+.selec3{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    position: relative;
+    top: 2vw;
+    left:3vw;
+    height: 40px;
+    width: 39%;
+}
+.men{
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    width: 80%;
+    height: 140px;
+    position: relative;
+    top: 3vw;
+    left: 3vw;
+}
+.bt1{
+    font-size: larger   ;
+    background-color: #06658D;
+    color: white;
+    border-radius: 50px;
+    box-shadow: none ;
+    border: 0 ;
+    height: 2.5vw;
+    width: 10vw;
+    position: relative;
+    left: 11vw;
+    top: 5vw;
+        
+}
+    
+
+    
+    
+.fundo {
+    position: relative;
+    display: inline-block;
+    padding: 70px;
+    font-size: 18px;
+    border: 5px solid transparent;
+    background-color: rgb(56, 189, 208);
+    width: 40%;
+    height: 40vw;
+    left: 32vw;
+    border-radius: 5vw;
+    animation: wave-border 10s infinite linear;
+    top: -8VW;
+}
+    
+    
+@keyframes wave-border {
+    0% {
+            border-color: rgba(56, 189, 208, 0.5);
+            box-shadow: 0 20px 20px rgba(56, 189, 208, 0.5);
+    }
+    50% {
+            border-color: rgba(56, 189, 208, 0.5);
+            box-shadow: 0 20px 20px rgba(56, 189, 208, 0.5);
+    }
+    100% {
+            border-color: rgba(56, 189, 208, 0.5);
+            box-shadow: 0 20px 20px rgba(56, 189, 208, 0.5);
+    }
+    
+}
+    
+.link1{
+
+    position: relative;
+    left: 17VW;
+    TOP: 11vw;
+    font-size:large
+}
+
+    
+.lg1{
+    position: relative;
+    top: -2vw;
+    width: 3vw;
+}
+    
+footer{
+    position: relative;
+    background-color: #3586ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 190px;
+    padding: 20px 50px;
+}
+.icone{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.icone li{
+    list-style: none;
+}
+.icone li a{
+    font-size: 3em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.icone li a:hover{
+    transform: translatey(-1vw);
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+footer .onda{
+position: absolute;
+top: -100px;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(images/wave.png);
+background-size: 1000px 100px;
+}
+
+footer .onda#onda0{
+    z-index: 1000;
+    opacity: 1;
+    bottom:0;
+    animation: animateWave 4s linear infinite;
+}
+footer .onda#onda1{
+    z-index: 999;
+    opacity: 0.5;
+    bottom:10px;
+    animation: animateWave_2 4s linear infinite;
+}
+footer .onda#onda2{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom:10px;
+    animation: animateWave_3 4s linear infinite;
+}
+footer .onda#onda3{
+    z-index: 999;
+    opacity: 0.7;
+    bottom:10px;
+    animation: animateWave_4 4s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2{
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_2{
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2{
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
