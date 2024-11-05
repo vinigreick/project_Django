@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+  {% block title %}
+  Cirurgia - Oculare
+  {% endblock %}
+
+  {% block unico %}
+  {% load static %}
+
+
+    <link rel="stylesheet" href="{%static 'css/cirurgias.css' %}">
+    <script src="{% static 'servicos.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+
+{% endblock %}
+{% block content %}
+
+
+    
+
+    <div class="img0">
+    <img src="{%static 'img/cirurgias.jfif' %}" alt="" class="foto1">
+
+</div>
+    
+
+    <div class="quadrado">
+        <div class="texto">
+        
+            <h1 class="titulo">Cirurgias Oftalmológicos</h1>
+        <div class="txt1">
+            <p>A Clínica Olhar Perfeito oferece cirurgias oftalmológicas em São Paulo, com uma
+                 equipe de profissionais altamente qualificados e equipamentos de última geração.
+                Nosso compromisso é realizar procedimentos cirúrgicos com precisão e segurança,
+                garantindo uma recuperação rápida e eficaz para nossos pacientes.</p>
+            
+            </div>
+
+        </div>
+            
+    </div> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br>    
+
+
+</div>
+<!--<img src="/Exames/img/foto 1.png" class="foto1">-->
+
+
+<img src="{%static 'img/cirurgia02.webp' %}" alt="" class="ft2">
+
+<div class="t22">
+<p>Cirurgias oftalmológicos<br> precisas com a Clínica<br> Oculare</p>
+</div>
+
+<div class="p2">
+<h1>A Clínica Oculare se destaca em oftalmologia, oferecendo procedimentos cirúrgicos de alta 
+    qualidade com tecnologia avançada. Com uma equipe especializada, a clínica adota uma 
+    abordagem personalizada, focando na precisão e segurança. Seu compromisso com a inovação e
+     excelência garante eficácia no atendimento às necessidades visuais, promovendo rápida 
+     recuperação e melhoria na qualidade de vida dos pacientes.
+    </h1>
+
+</div>
+
+<br><br>
+
+
+        <button class="botagend" type="button" onclick="location.href='{% url 'agendamento' %}'">Agendar consulta</button>
+
+
+
+
+<div class="linha">
+<hr>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+    
+
+</div>
+    
+
+
+<div class="linha2">
+    <hr>
+    </div>
+
+
+<div class="card1">
+    
+</div>
+
+
+<div class="txt3">
+    <p>A cirurgia de catarata é um procedimento oftalmológico comum realizado para remover o 
+        cristalino opaco do olho, que causa visão turva e dificuldade em enxergar claramente. 
+        Durante a cirurgia, o cristalino afetado é removido e substituído por uma 
+        lente intraocular artificial transparente. O procedimento é minimamente invasivo e 
+        geralmente realizado sob anestesia local, com a maioria dos pacientes recuperando a 
+        visão de forma rápida e significativa. É uma solução eficaz para restaurar a visão e 
+        melhorar a qualidade de vida de pessoas afetadas por catarata.</p>
+    </div>          
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="card2">
+    
+    </div>
+    
+    
+    <div class="txt4">
+        <p>A cirurgia para glaucoma é um procedimento oftalmológico que visa reduzir a pressão 
+            intraocular elevada, a principal causa de dano ao nervo óptico e perda de visão. 
+            Tipos de cirurgia incluem a trabeculectomia, que cria uma nova via de drenagem, e a 
+            implantação de dispositivos de drenagem. O objetivo é melhorar o fluxo do humor 
+            aquoso, aliviando a pressão ocular e preservando a visão. A escolha do tipo de 
+            cirurgia depende da gravidade do glaucoma e da resposta a tratamentos anteriores.</p>
+        </div>
+
+
+        <button class="bot2"  id="bot2" >Ver mais</button>
+        <div id="novoConteudo" style="display: none;">
+            <div class="card3">
+                    <div class="img1">
+                        <img src="{%static 'img/logo2maior' %}" >
+                    </div>
+                </div>
+                    
+                    
+                <div  class="txt5">
+                    <p>Na Clínica Oculare, oferecemos retinografia, uma tecnologia avançada que captura imagens detalhadas da retina sem 
+                        dilatação das pupilas, tornando o exame mais confortável e ágil. Essencial para a detecção precoce de condições 
+                        oculares, este procedimento permite identificar problemas antes que se tornem sérios. Ao agendar seu exame 
+                        conosco, você garante um monitoramento eficaz da sua saúde ocular. Nossa equipe qualificada está sempre pronta 
+                        para oferecer um atendimento acolhedor e profissional. Entre em contato e cuide da sua visão!</p>
+                    </div>     
+                    
+                    <br>   
+                
+                    <div class="card4">
+                        <div class="img1">
+                            <img src="/EXAMES/img/logo2maior.png" >
+                        </div>
+                    </div>
+                    
+                    
+                    <div  class="txt6">
+                        <p>O exame de fotodocumentação do segmento anterior da Clínica Oculare em São Paulo utiliza uma câmera de última geração para 
+                            capturar imagens detalhadas das estruturas oculares frontais, como córnea, íris, pupila e conjuntiva. Essa tecnologia 
+                            proporciona visualização nítida, permitindo diagnósticos precisos e monitoramento eficaz de condições oculares. Assim, é 
+                            essencial para a saúde visual dos pacientes, ajudando na identificação precoce de problemas e na definição de tratamentos adequados. A Clínica Oculare se destaca por sua dedicação à excelência e à inovação na preservação da visão.</p>
+                        </div>  
+        </div>
+    
+        <script>
+            const botao = document.getElementById('bot2');
+            const conteudo = document.getElementById('novoConteudo');
+            botao.addEventListener('click', () => {
+                conteudo.style.display = 'block'; 
+                botao.style.display = 'none'; 
+                const novoBotao = document.createElement('button');
+                novoBotao.textContent = 'Ver menos';
+                novoBotao.classList.add('novo-botao');
+                document.body.appendChild(novoBotao);
+                novoBotao.addEventListener('click', () => {
+                    conteudo.style.display = 'none'; 
+                    botao.style.display = 'block'; 
+                    document.body.removeChild(novoBotao);   
+                });
+            });
+        </script>
+            
+
+            {% endblock %}

@@ -1,0 +1,588 @@
+body {
+    
+  background: rgb(208,218,227);
+  background: linear-gradient(90deg, rgba(208,218,227,1) 21%, rgba(202,213,223,1) 41%, rgba(142,165,181,1) 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+font-family: "Schibsted Grotesk", sans-serif;
+
+}
+
+#erro{
+color: rgb(0, 0, 0); 
+position: absolute;
+top: 10vw;
+display: none;
+justify-content: center; /* Centraliza horizontalmente */
+align-items: center;    
+background: rgb(235, 238, 37);
+z-index: 1;
+}
+/* Container do alerta */
+.alert-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Estilo do alerta */
+.alert-error {
+  top: 10vw;
+  left: 32.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert {
+background-color: #ec6868;
+color: white;
+padding: 1vw 2vw;
+border-radius: 0.5vw;
+font-size: 1.2vw;
+text-align: center;
+position: absolute;
+width: 100%;
+max-width: 30vw;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+transition: opacity 0.5s ease;
+}
+/* Olho Senha */
+.olho{
+height: 2vw;
+}
+
+
+.tudo{
+display: flex;
+justify-content: center;
+}
+
+.main {
+position: relative;
+  left: 0vw;
+  top: 15vw;
+  width: 30%;
+  height: 75vw;
+  max-height: 30.5vw /*30vw*/;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0.6% 0.6% 0.9% 0.2% #24004628;
+  border-radius: 10%;
+}
+.pessoa_login{
+  position: relative;
+  left: -0.6%;
+  width: 50vw;
+  height: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+  padding: 2vw;
+}
+
+#chk {
+  display: none;
+}
+#chk2 {
+  display: none;
+}
+.fonte{
+color: #719ca3 !important;
+}
+/*Login*/
+.login {
+position: absolute;
+top: 1vw;
+  width: 100%;
+  height: 500vw;
+}
+.container-login{
+  margin-top: 1vw !important;
+}
+.login label {
+  margin: 1.2vw 1vw 2vw;
+}
+
+.fraseinter {
+  color: #000000;
+  font-size: 1.3vw;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  position: relative;
+}
+
+.linkinter{
+  margin-left: 2%;
+  transition: 0.2s;
+} 
+
+.linkinter:hover{
+  color: rgba(17, 66, 226, 0.733);
+  position: relative;
+  background: none !important;
+  height: auto;
+  width: auto;
+  transition: 0.1s;
+
+}
+.cadastre:hover{
+color: rgba(17, 66, 226, 0.733);
+  position: relative;
+  background: none !important;
+  height: auto;
+  width: auto;
+  transition: 0.1s;
+
+}
+.label {
+  color: #000000;
+  font-size: 1vw;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.input {
+  width: 15vw;
+  height: 2.5vw;
+  background: #ffffff;
+  padding: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+}
+.google{
+background: #7bb6d8 !important;
+}
+.logar{
+background: #1352b1 !important;
+}
+.senha{
+display: flex;
+}
+.toggle-password {
+position: absolute;
+right: 1vw;
+top: 1vw;
+cursor: pointer;
+color: #007BFF; /* Cor do ícone */
+font-size: 1.6vw; /* Tamanho do ícone */
+}
+
+/*Registro*/
+.cadastro {
+position: absolute;
+border-radius: 0;
+transform: translateY(2vw);
+transition: .4s ease-in-out;
+top: 36vw;
+}
+
+.cadastro label {
+  color: #000000;
+  transform: scale(.6);
+}
+
+#chk:checked~.cadastro {
+  transform: translateY(-37vw);
+}
+
+#chk:checked~.login {
+  transform: translateY(37vw);
+  
+}
+
+#chk:checked~.cadastro label {
+  transform: scale(1);
+  margin: 2.25vw 0 5%;
+}
+
+#chk:checked~.login label {
+  transform: scale(.6);
+  margin: 2vw 0 2vw;
+}
+.ja{
+top: -2.5vw;
+}
+.subir{
+position: absolute !important;
+top: 28.2vw !important;
+left: 4vw;
+}
+/*Botões*/
+.form button {
+  width: 20vw;
+  height: 3vw;
+  margin: 0vw auto 1vw;
+  color: rgb(255, 255, 255);
+  background: #4384af;
+  font-size: 1vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  transition: .2s ease-in;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -1vw;
+  transition: 0.5s;
+}
+.continuar{
+  font-size: 0.9vw;
+  margin-left: -3vw;
+}
+.form button:hover {
+  background-color: rgb(40, 105, 138) !important;
+  transition: 0.2s;
+}
+
+.icon {
+  margin-top: -1%;
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+.oauthButton {
+  font-size: 1vw;
+}
+
+.lol {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  margin-left: -1%;
+  font-weight: 600;
+  margin-top: 0vw;
+  font-size: 2vw;
+  color: rgb(0, 10, 80);
+}
+
+/*animação input*/
+
+.input-container {
+  position: relative;
+  margin-left: 0 ;
+  width: 100%;
+  border-bottom: #000 solid 0.1vw;
+  margin-top: -1vw;
+  
+}
+
+.input-container input[type="text"] {
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  border-top: 2% solid #ffffff;
+  padding: 0.5vw 0;
+  background-color: transparent;
+  outline: none;
+}
+  
+.input-container input[type="email"] {
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  border-top: 2% solid #ffffff;
+  padding: 0.5vw 0;
+  background-color: transparent;
+  outline: none;
+}
+.input-container2 input[type="email"] {
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  padding: 0.5vw 0;
+  background-color: transparent;
+  outline: none;
+}
+  
+input[type="password"] {
+width: 100%;
+padding: 0.5vw 0;
+font-size: 1.3vw;
+background: none;
+border: none;
+outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  font-size: 1vw ;
+  left: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -70vw;
+  font-size: 1vw;
+  color: #333;
+}
+.input-container input[type="email"]:focus ~ .label,
+.input-container input[type="email"]:valid ~ .label {
+  top: -70vw;
+  font-size: 1vw;
+  color: #333;
+}
+.input-container2 input[type="email"]:focus ~ .label,
+.input-container2 input[type="email"]:valid ~ .label {
+  top: -70%;
+  font-size: 1vw;
+  color: #333;
+}
+.input-container input[type="password"]:focus ~ .label,
+.input-container input[type="password"]:valid ~ .label {
+  top: -70%;
+  font-size: 1vw;
+  color: #333;
+}
+.input-container2 input[type="password"]:focus ~ .label,
+.input-container2 input[type="password"]:valid ~ .label {
+  top: -70%;
+  font-size: 1vw;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+.input-container input[type="email"]:focus ~ .underline,
+.input-container input[type="email"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+.input-container2 input[type="email"]:focus ~ .underline,
+.input-container2 input[type="email"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+.input-container2 input[type="text"]:focus ~ .label,
+.input-container2 input[type="text"]:valid ~ .label {
+  top: -7vw;
+  font-size: 1vw;
+  color: #333;
+}
+
+/*Parte Cadastro*/
+
+.lol2 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  font-weight: 600;
+  font-size: 2vw;
+  color: rgb(0, 10, 80);
+  position: relative;
+  top: -1.4vw;
+}
+.input-container2 {
+  position: relative;
+  margin-left: 0 ;
+  width: 100%;
+  border-bottom: #000 solid 0.1vw;
+  margin-bottom: 2%;
+}
+.input-container2 input[type="text"] {
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  border-top: 2% solid #ffffff;
+  padding: 2% 0;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.input-container2 .label {
+  position: absolute;
+  top: -1.2vw;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container2 input[type="text"]:focus ~ .label,
+.input-container2 input[type="text"]:valid ~ .label {
+  top: -3vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -2.2vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+
+.input-container2 input[type="email"]:focus ~ .label,
+.input-container2 input[type="email"]:valid ~ .label {
+  top: -3vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+
+.input-container input[type="password"]:focus ~ .label,
+.input-container input[type="password"]:valid ~ .label {
+  top: -2.3vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+.input-container2 input[type="password"]:focus ~ .label,
+.input-container2 input[type="password"]:valid ~ .label {
+  top: -3.3vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+.input-container2 .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container2 input[type="text"]:focus ~ .underline,
+.input-container2 input[type="text"]:valid ~ .underline {
+  transform: scaleX(1vw);
+}
+.input-container2 input[type="email"]:focus ~ .underline,
+.input-container2 input[type="email"]:valid ~ .underline {
+  transform: scaleX(1vw);
+}
+.input-container input[type="password"]:focus ~ .underline,
+.input-container input[type="password"]:valid ~ .underline {
+  transform: scaleX(1vw);
+}
+.input-container2 input[type="password"]:focus ~ .underline,
+.input-container2 input[type="password"]:valid ~ .underline {
+  transform: scaleX(1vw);
+}
+
+/*Esqueci a Senha*/
+.esqueci{
+position: absolute;
+top: 32vw;
+}
+.texto{
+margin-top: -2vw;
+text-align:left;
+font-size: 1.5vw;
+}
+.espaco{
+margin-top:1vw !important;
+}
+.voltar{
+margin-top:-3vw !important;
+
+}
+#chk2:checked~.esqueci {
+  transform: translateY(-30vw);
+}
+
+#chk2:checked~.login {
+  transform: translateY(30vw);
+}
+
+#chk2:checked~.esqueci label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+
+#chk2:checked~.login label {
+  transform: scale(.6);
+  margin: 2vw 0 2vw;
+}
+
+ /*Seção com input-container3*/
+ .lol3 {
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  font-weight: 600;
+  font-size: 2vw;
+  color: rgb(0, 10, 80);
+  position: relative;
+  top: -4vw;
+}
+
+.input-container3 {
+  position: relative;
+  margin-left: 0 ;
+  width: 100%;
+  border-bottom: #000 solid 0.1vw;
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+.input-container3 input[type="email"] {
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  border-top: 2% solid #ffffff;
+  padding: 0.5vw 0;
+  background-color: transparent;
+  outline: none;
+}
+.input-container3 .label {
+  position: absolute;
+  top: -1.5vw;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container3 input[type="email"]:focus ~ .label,
+.input-container3 input[type="email"]:valid ~ .label {
+  top: -3.3vw;
+  font-size: 1vw;
+  color: #333 !important;
+}
+
+.input-container3 .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2vw;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container3 input[type="text"]:focus ~ .underline,
+.input-container3 input[type="text"]:valid ~ .underline {
+  transform: scaleX(1vw);
+}
+footer{
+  margin-top: 20vw;
+}

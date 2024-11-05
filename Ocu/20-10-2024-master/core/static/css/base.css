@@ -1,0 +1,266 @@
+  /*Header acima*/
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   overflow-y:scroll;
+}
+*{
+    max-width: 101vw;
+    margin: 0;
+    padding: 0;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+html, body {
+    height: 100%; /* Define 100% de altura para a tela */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 95vw;
+    height: 7vw;
+    box-shadow: 0 0 0.01vw 0 rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 2vw;
+    left: 2vw;
+    right: 0;
+    z-index: 1000;
+    transition: 0.5s ease;
+    border-radius: 0.5vw;
+}
+
+header.scrolled {
+    background-color: rgb(255, 255, 255); /* Menu opaco ao rolar */
+    box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.1); /* Sombra adicionada ao rolar */
+    border-bottom: #333 solid 0.1vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+.opç {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.7vw;
+}
+li {
+    position: relative;
+    float: left;
+    margin-left: 2vw;
+}
+
+li a {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.options {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.342);
+    min-width: 12.25vw;
+    box-shadow: 0 0.03vw 0.07vw rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0.5vw;
+}
+
+.options a {
+    color: rgb(255, 255, 255);
+    margin-top: 1vw;
+    text-decoration: none;
+    margin-bottom: 1vw;
+}
+
+li.dropdown:hover .options {
+    display: block;
+}
+
+header a {
+    color: rgb(15, 15, 15);
+    margin-top: 2.5vw;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: rgb(58, 94, 141);
+}
+.usuario_nome{
+    margin-top: 0.5vw;
+    font-size: 2.5vw;
+    margin-left: 6vw;
+}
+.sair{
+    background:none;
+    border:none;
+    color:blue;
+    cursor:pointer;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    margin-left: 6vw;
+}
+svg {
+    width: 3vw;
+    height: 2vw;
+}
+
+/* Seta */
+#backToTop {
+    width: 4vw; 
+    height: 5vw; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3vw; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-decoration: none; 
+}
+
+
+
+#backToTopText {
+    display: block;
+    color: #000000;
+    font-size: 1vw;
+    margin-top: 0vw;
+}
+
+#backToTopContainer {
+    position: fixed;
+    top: 47vw; 
+    right: 2vw;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+
+/* Footer */
+
+footer {
+    width: 2vw;
+    height: 20vw;
+    position: relative;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+}
+
+.espac {
+    width: auto;
+    height: 1vw;
+}
+
+.geral {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-bottom: 0.2vw;
+    font-size: 3vw;
+    color: white;
+}
+
+.geralapp {
+    display: flex;
+    margin-top: 0.15vw;
+}
+
+.app {
+    display: flex;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 0.2vw;
+}
+
+i {
+    font-size: 1vw;
+}
+
+.escrit {
+    margin-right: 0.1vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+}
+
+.direitos {
+    margin-top: 0.18vw;
+    font-size: 1vw;
+    color: rgb(255, 255, 255);
+}
+
+.line {
+    width: auto;
+    height: 0.03vw;
+    background-color: rgba(255, 255, 255, 0.875);
+    margin-top: 0.05vw;
+    margin-bottom: 0.01vw;
+}
+
+.vertical {
+    width: 0.5vw;
+    height: 11vw;
+    background-color: rgba(255, 255, 255, 0.875);
+    margin-top: 2.5vw;
+}
+.segunda{
+    margin-right: -0.2vw;
+}
+iframe {
+    width: 30vw;
+    bottom: 0;
+    height: 15vw;
+    margin-right: 2vw;
+}
+
+/* Animação chegando de lado */
+.animacao_esquerda {
+    position: relative;
+    left: -30vw;  /* Começa fora da tela */
+    opacity: 0;    /* Começa invisível */
+    transition: left 1.5s ease, opacity 1s ease;
+}
+
+.animacao_esquerda.show {
+    left: 0vw;  /* Quando a classe 'show' for adicionada, o item vai aparecer */
+    opacity: 1;
+}
+
+/* Animação de surgimento */
+
+.surgimento {
+    opacity: 0;
+    transform: scale(0.8);  /* Começa ligeiramente reduzido */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Anima opacidade e escala */
+}
+
+.surgimento.visivel {
+    opacity: 1;
+    transform: scale(1);  /* Volta ao tamanho original */
+}
